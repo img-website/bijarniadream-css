@@ -1,0 +1,17 @@
+{
+  "name": "bijarniadream-css",
+  "version": "1.4.0",
+  "description": "CSS utility library for responsive design",
+  "scripts": {
+    "build": "npm run css && npm run minify",
+    "css": "sass bijarniadream.scss bijarniadream.css",
+    "minify": "postcss bijarniadream.css -o bijarniadream.min.css"
+  },
+  "devDependencies": {
+    "sass": "^1.70.0",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.0"
+  }
+}
